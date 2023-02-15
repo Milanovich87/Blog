@@ -1,0 +1,18 @@
+@import '../styles/variables';
+@import '../styles/fonts';
+
+.more--light {
+    color: $color-grey;
+box-sizing: unset;
+    &:not([disabled]):hover {
+        color: $color-white;
+    }
+}
+
+.more--dark {
+    color: $color-white;
+box-sizing: unset;
+    &:not([disabled]):hover {
+        color: $color-primary2;
+    }
+}

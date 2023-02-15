@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+@import '../../styles/fonts';
+
+.form__text {
+  user-select: none;
+  margin: 0;
+  font-family: InterBold, sans-serif;
+    user-select: none;
+    font-weight: 500;
+    font-size: $font-size-subline-1;
+    line-height: 20px;
+  &:nth-child(2) {
+    margin-bottom: 2rem;
+  }
+}
+
+.form__success {
+  max-width: 624px;
+  margin: 80px auto;
+  padding: 40px;
+  border: 1px solid $color-background-primary2;
+  border-radius: 2px;
+
+  .form__submit {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

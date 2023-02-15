@@ -1,0 +1,45 @@
+@import '../styles/variables';
+@import '../styles/fonts';
+
+.auth-page-wrapper--light {
+  text-align: left;
+  background-color: $color-background-main;
+      margin-top: 84px;
+.wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+  .auth-page-wrapper__title {
+    font-family: InterBold, sans-serif;
+    font-weight: 700;
+    font-size: $font-size-headline-1-desktop;
+    line-height: 80px;
+    color: $color-secondary;
+    padding-left: 12px;
+    &:hover {
+      user-select: none;
+    }
+  }
+}
+
+.auth-page-wrapper--dark {
+  text-align: left;
+  background-color: $color-secondary;
+      margin-top: 84px;
+.wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+  .auth-page-wrapper__title {
+    font-family: InterBold, sans-serif;
+    font-weight: 700;
+    font-size: $font-size-headline-1-desktop;
+    line-height: 80px;
+    color: $color-white;
+    padding-left: 12px;
+
+    &:hover {
+      user-select: none;
+    }
+  }
+}

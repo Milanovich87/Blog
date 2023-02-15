@@ -1,0 +1,398 @@
+@import "../../styles/variables";
+@import "../../styles/fonts";
+
+.form-add-post--light {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0 40px 40px 40px;
+  // border: 1px solid $color-background-primary2;
+  // border-radius: 2px;
+.form__main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .form__input--light{
+    width: 544px;
+  }
+}
+
+  .form__submit {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    .submit__text {
+      font-family: InterBold, sans-serif;
+      user-select: none;
+      font-weight: 500;
+      font-size: $font-size-subline-1;
+      line-height: 20px;
+      margin-top: 20px;
+      color: $color-background-primary;
+
+      span {
+        margin-left: 6px;
+        color: $color-primary;
+
+        &:hover {
+          color: $color-primary2;
+          cursor: point;
+        }
+      }
+    }
+  }
+  .add-form__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    span {
+      margin-top: 40px;
+      display: flex;
+      flex-flow: column;
+      gap: 8px;
+      font-family: InterSemiBold, sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #313037;
+      text-align: left;
+    }
+
+    textarea {
+      border: none;
+      outline: none;
+      font-family: InterRegular, sans-serif;
+      font-weight: 400;
+      font-size: $font-size-subline-1;
+      line-height: 20px;
+      padding: 18px 20px;
+      background-color: $color-white;
+      color: $color-secondary;
+      outline: 2px solid transparent;
+      border-radius: 2px;
+      resize: none;
+      min-height: 98px;
+
+      &:focus {
+        outline-color: $color-background-primary2;
+      }
+
+      &:disabled {
+        outline-color: $color-primary2;
+        cursor: not-allowed;
+        background-color: $color-light;
+      }
+    }
+  }
+
+  .add-form__buttons {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+
+    &-right {
+      display: flex;
+      gap: 24px;
+
+      .btn-primary {
+        font-family: InterSemiBold, sans-serif;
+        font-size: $font-size-headline-3-desktop;
+        border-radius: 2px;
+        text-align: center;
+        border: none;
+        transition: 0.4s;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background-color: transparent;
+          color: black;
+          transition: 0.4s;
+          cursor: pointer;
+        }
+
+        &:disabled {
+          background-color: $color-light;
+          color: $color-background-primary;
+          opacity: 0.5;
+        }
+
+        padding: 16px 32px;
+        color: $color-white;
+        background: $color-primary;
+
+        &:not([disabled]):hover {
+          background: $color-primary2;
+        }
+      }
+    }
+
+    .btn-secondary {
+      font-family: InterSemiBold, sans-serif;
+      font-size: $font-size-headline-3-desktop;
+      border-radius: 2px;
+      text-align: center;
+      border: none;
+      transition: 0.4s;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: transparent;
+        color: black;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+
+      &:disabled {
+        background-color: $color-light;
+        color: $color-background-primary;
+        opacity: 0.5;
+      }
+
+      padding: 16px 32px;
+      background: $color-background-primary;
+      color: $color-secondary;
+
+      &:not([disabled]):hover {
+        background: $color-light;
+      }
+    }
+
+    .btn-secondary2 {
+      font-family: InterSemiBold, sans-serif;
+      font-size: $font-size-headline-3-desktop;
+      border-radius: 2px;
+      text-align: center;
+      border: none;
+      transition: 0.4s;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: transparent;
+        color: black;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+
+      &:disabled {
+        background-color: $color-light;
+        color: $color-background-primary;
+        opacity: 0.5;
+      }
+
+      padding: 16px 32px;
+      color: $color-error;
+      background: $color-background-main;
+
+      &:not([disabled]):hover {
+        border: 1px solid $color-background-primary2;
+      }
+    }
+  }
+
+  .input__image {
+    background: $color-white;
+    resize: none;
+  }
+}
+
+.form-add-post--dark {
+  max-width: 624px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0 40px 40px 40px;
+  border: 1px solid $color-background-main;
+  border-radius: 2px;
+
+  .form__submit {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    .submit__text {
+      font-family: InterBold, sans-serif;
+      user-select: none;
+      font-weight: 500;
+      font-size: $font-size-subline-1;
+      line-height: 20px;
+      margin-top: 20px;
+      color: $color-background-primary;
+
+      span {
+        margin-left: 6px;
+        color: $color-primary;
+
+        &:hover {
+          color: $color-primary2;
+          cursor: point;
+        }
+      }
+    }
+  }
+
+  .add-form__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    span {
+      margin-top: 40px;
+      display: flex;
+      flex-flow: column;
+      gap: 8px;
+      font-family: InterSemiBold, sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: $color-white;
+      text-align: left;
+    }
+
+    textarea {
+      border: none;
+      outline: none;
+      font-family: InterRegular, sans-serif;
+      font-weight: 400;
+      font-size: $font-size-subline-1;
+      line-height: 20px;
+      padding: 18px 20px;
+      background-color: $color-white;
+      color: $color-secondary;
+      outline: 2px solid transparent;
+      border-radius: 2px;
+      resize: none;
+      min-height: 98px;
+
+      &:focus {
+        outline-color: $color-background-primary2;
+      }
+
+      &:disabled {
+        outline-color: $color-primary2;
+        cursor: not-allowed;
+        background-color: $color-light;
+      }
+    }
+  }
+
+  .add-form__buttons {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+
+    &-right {
+      display: flex;
+      gap: 24px;
+
+      .btn-primary {
+        font-family: InterSemiBold, sans-serif;
+        font-size: $font-size-headline-3-desktop;
+        border-radius: 2px;
+        text-align: center;
+        border: none;
+        transition: 0.4s;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background-color: transparent;
+          color: black;
+          transition: 0.4s;
+          cursor: pointer;
+        }
+
+        &:disabled {
+          background-color: $color-light;
+          color: $color-background-primary;
+          opacity: 0.5;
+        }
+
+        padding: 16px 32px;
+        color: $color-white;
+        background: $color-primary;
+
+        &:not([disabled]):hover {
+          background: $color-primary2;
+        }
+      }
+    }
+
+    .btn-secondary {
+      font-family: InterSemiBold, sans-serif;
+      font-size: $font-size-headline-3-desktop;
+      border-radius: 2px;
+      text-align: center;
+      border: none;
+      transition: 0.4s;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: transparent;
+        color: black;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+
+      &:disabled {
+        background-color: $color-light;
+        color: $color-background-primary;
+        opacity: 0.5;
+      }
+
+      padding: 16px 32px;
+      background: $color-background-primary;
+      color: $color-secondary;
+
+      &:not([disabled]):hover {
+        background: $color-light;
+      }
+    }
+
+    .btn-secondary2 {
+      font-family: InterSemiBold, sans-serif;
+      font-size: $font-size-headline-3-desktop;
+      border-radius: 2px;
+      text-align: center;
+      border: none;
+      transition: 0.4s;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: transparent;
+        color: black;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+
+      &:disabled {
+        background-color: $color-light;
+        color: $color-background-primary;
+        opacity: 0.5;
+      }
+
+      padding: 16px 32px;
+      color: $color-error;
+      background: $color-secondary;
+
+      &:not([disabled]):hover {
+        border: 1px solid $color-error;
+        color: $color-error;
+      }
+    }
+  }
+
+  .input__image {
+    background: $color-white;
+    resize: none;
+  }
+}

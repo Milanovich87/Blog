@@ -1,0 +1,66 @@
+@import "../styles/variables";
+@import "../styles/fonts";
+
+.tabs--light {
+  .tabs__body {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row;
+    border-bottom: 1px solid $color-background-primary2;
+  }
+
+  .tabs__btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2rem 2rem 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $color-background-secondary;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: $color-secondary;
+    transition: 0.3s;
+
+    &:hover {
+      border-color: $color-secondary;
+      cursor: pointer;
+    }
+    &:focus{
+      background: $color-background-primary2;
+      color: $color-primary;
+    }
+  }
+}
+
+.tabs--dark {
+  .tabs__body {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row;
+    border-bottom: 1px solid $color-background-primary;
+  }
+
+  .tabs__btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2rem 2rem 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $color-secondary;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: $color-white;
+    transition: 0.3s;
+
+    &:hover {
+      border-color: $color-white;
+      cursor: pointer;
+    }
+  }
+}
